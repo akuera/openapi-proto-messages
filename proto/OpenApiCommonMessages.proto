@@ -7,7 +7,7 @@ option java_generate_equals_and_hash = true;
 option java_package = "com.xtrader.protocol.proto.commons";
 option java_outer_classname = "ContainerCommonMessages";
 
-import "OpenApiCommonModelMessages.proto";
+import "proto/OpenApiCommonModelMessages.proto";
 
 
 message ProtoMessage {
