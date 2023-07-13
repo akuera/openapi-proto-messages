@@ -25,10 +25,10 @@ jobs:
     - name: Install protoc-gen-go
       run: |
         go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.28
-        
+
     - name: Generate Golang objects from Proto files
       run: |
-        protoc --go_out=./go --go_opt=paths=source_relative --go-grpc_out=./go --go-grpc_opt=paths=source_relative ./proto/*.proto
+        protoc --go_out=./go --go_opt=paths=source_relative --plugin=./protoc-gen-go=./protoc-gen-go  --go-grpc_out=./go --go-grpc_opt=paths=source_relative ./proto/*.proto
 
     - name: Commit and push changes
       run: |
