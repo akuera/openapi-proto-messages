@@ -33,7 +33,7 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        git config --global user.name "Akuera
+        git config --global user.name "Akuera"
         git config --global user.email "eoirerejr@example.com"
         git add ./go/*.go
         git commit -m "Generated Golang objects from Proto files"
