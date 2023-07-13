@@ -37,4 +37,4 @@ jobs:
         git config --global user.email "eoirerejr@gmail.com"
         git add ./go/*.go
         git commit -m "Generated Golang objects from Proto files"
-        git push
+        git push origin main
